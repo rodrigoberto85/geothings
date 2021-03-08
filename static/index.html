@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+		<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+		<title>Spatial Analysis</title>
+	</head>
+	<body>
+		<h1>Spatial Analysis of Urban Area</h1>
+		<h2>Fealibility analysis for urban planner</h2>
+		<div>
+			<p>Through a web interface, <b>extract georeferenced information from urban areas</b>, delivery data for urban planners.</p>
+
+			<p>
+			<ul>
+				<li>Allows data extraction by a professional who does not specialize in spatial analysis</li>
+				<li>From an area defined in a map, generate preliminary data that support rapid decision making, without the need for field inspection.</li>
+			</ul>
+			<div class="figure">
+				<img src="image/definedAreaSmall400x300.png" class="figure-img img-fluid img-thumbnail rounded" alt="Area Definida"/>
+			</div>
+			<div>
+				<p>
+				<b>Outputs avaliable</b>
+				<div class="col-xs-6">
+				<div class="table-responsive " id="tabelas">
+				<table class="table table-striped " "id="table1">
+					<caption><b>Area amenties</b></caption>
+					<thead>
+					<tr>
+						<th>Amentie type</th>
+						<th>Quantity</th>
+
+					</tr>
+					</thead>
+					<tbody>
+										<tr>
+						<th>arts_centre</th>
+						<th>1</th>
+
+					</tr>
+					<tr>
+						<th>atm</th>
+						<th>1</th>
+
+					</tr>
+					<tr>
+						<th>bank</th>
+						<th>1</th>
+
+					</tr>
+					<tr>
+						<th>bar</th>
+						<th>2</th>
+
+					</tr>
+					<tr>
+						<th>bicycle_parking</th>
+						<th>1</th>
+
+					</tr>
+					<tr>
+						<th>cafe</th>
+						<th>4</th>
+
+					</tr>
+					<tr>
+						<th>childcare</th>
+						<th>1</th>
+
+					</tr>
+					<tr>
+						<th>clinic</th>
+						<th>1</th>
+
+					</tr>
+					<tr>
+						<th>college</th>
+						<th>1</th>
+
+					</tr>
+					<tr>
+						<th>doctors</th>
+						<th>2</th>
+
+					</tr>
+					<tr>
+						<th>fast_food</th>
+						<th>2</th>
+
+					</tr>
+					<tr>
+						<th>fuel</th>
+						<th>7</th>
+
+					</tr>
+					<tr>
+						<th>fuel;pharmacy</th>
+						<th>1</th>
+
+					</tr>
+					<tr>
+						<th>ice_cream</th>
+						<th>1</th>
+
+					</tr>
+					<tr>
+						<th>marketplace</th>
+						<th>2</th>
+
+					</tr>
+					<tr>
+						<th>parking</th>
+						<th>1</th>
+
+					</tr>
+					<tr>
+						<th>parking_entrance</th>
+						<th>1</th>
+
+					</tr>
+					<tr>
+						<th>pharmacy</th>
+						<th>4</th>
+
+					</tr>
+					<tr>
+						<th>place_odf_worship</th>
+						<th>2</th>
+
+					</tr>
+					<tr>
+						<th>restaurant</th>
+						<th>26</th>
+
+					</tr>
+					<tr>
+						<th>taxi</th>
+						<th>1</th>
+
+					</tr>
+					<tr>
+						<th>veterinary</th>
+						<th>1</th>
+
+					</tr>
+
+					</tbody>
+				</table>
+				<table class="table table-striped" id="table2">
+					<caption><b>Road type and length</b></caption>
+					<thead>
+					<tr>
+						<th>Road Type</th>
+						<th>Count</th>
+						<th>Road Length (m)</th>
+					</tr>
+					</thead>
+					<tbody>
+										<tr>
+						<th>footway</th>
+						<th>12</th>
+						<th>427,108</th>
+					</tr>
+					<tr>
+						<th>living_street</th>
+						<th>1</th>
+						<th>70,192</th>
+					</tr>
+					<tr>
+						<th>pedestrian</th>
+						<th>1</th>
+						<th>140,158</th>
+					</tr>
+					<tr>
+						<th>platform</th>
+						<th>5</th>
+						<th>302,605</th>
+					</tr>
+					<tr>
+						<th>primary</th>
+						<th>16</th>
+						<th>2785,803</th>
+					</tr>
+					<tr>
+						<th>residential</th>
+						<th>104</th>
+						<th>31513,983</th>
+					</tr>
+					<tr>
+						<th>service</th>
+						<th>27</th>
+						<th>1533,671</th>
+					</tr>
+					<tr>
+						<th>tertiary</th>
+						<th>9</th>
+						<th>3446,344</th>
+					</tr>
+					</tbody>
+				</table>
+				<p></p>
+				<table class="table table-striped" id="table3">
+
+				<caption><b>Total road length output</b></caption>
+					<thead>
+					<tr>
+						<th>Sum of road length</th>
+						<th>Total (m)</th>
+					</tr>
+					</thead>
+					<tr>
+						<th>Total roads length</th>
+						<th>40.129,00</th>
+					</tr>
+				</table>
+				<p></p>
+
+
+
+				</p>
+
+			</div>
+			</p>
+		</div>
+		</div>
+		<h1><Analysis Input></h1>
+		<div>
+			<p>Input area informations to be analysed by tool</p>
+		</div>
+		<div>
+		<form  method="post">
+			<div>
+				<label class="form-label">City:</label>
+				<input class="form-control" id="city" type="text" name="Cidade" placeholder="Cidade da area de interesse"/>
+			</div>
+			<div>
+				<label class="form-label">Polygon of interest area</label>
+				<input class="form-control" id="polygon" type="text" name="Poligono da area de interesse" placeholder="POLYGON((-46.67528331021837 -23.606349088742842,-46.670648453040634 -23.5999784268858,-46.655413505836044 -23.607843396705487,-46.66167914609483 -23.61480350144652,-46.67528331021837 -23.606349088742842))"/>
+			</div>
+		</form>
+		</div>
+
+	</body>
+</html>
